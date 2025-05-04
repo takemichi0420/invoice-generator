@@ -36,11 +36,11 @@ def apply_styles_to_detail(ws, start_row, row_count):
 def generate_invoice(client_name, delivery_date_cell, tax_rate=1.1):
     try:
  # パス設定
-        input_dir = "/Users/matsushitatakemiti/Library/CloudStorage/OneDrive-個人用/02旅館その他 納品書・請求書"
-        copied_input_path = "/Users/matsushitatakemiti/Library/CloudStorage/OneDrive-個人用/00請求書作成書類/000.xlsx"
-        invoice_template_path = "/Users/matsushitatakemiti/Library/CloudStorage/OneDrive-個人用/00請求書作成書類/請求書.xlsx"
-        output_dir = "/Users/matsushitatakemiti/Library/CloudStorage/OneDrive-個人用/00請求書作成書類/output"
-        sales_log_path = "/Users/matsushitatakemiti/Library/CloudStorage/OneDrive-個人用/00請求書作成書類/売り上げ一覧（旅館その他）.xlsx"
+        input_dir = "input_directory"
+        copied_input_path = "copied_input_path.xlsx"
+        invoice_template_path = "invoice_template_path.xlsx"
+        output_dir = "output_directory"
+        sales_log_path = "sales_log_path.xlsx"
 
         all_files = glob.glob(f"{input_dir}/*.xlsx")
         normalized_target = unicodedata.normalize('NFKC', client_name)
