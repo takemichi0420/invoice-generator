@@ -31,6 +31,7 @@ invoice-generator/
 ├── .gitignore
 └── README.md
 
+・実行コマンド
 python src/generate_invoice.py \
   --client_name "XXX" \
   --delivery_date_cell "E1"
