@@ -11,7 +11,7 @@
 	•	書式付きのExcel請求書を生成（交互配色・通貨書式など）
 
 Python version
-	2.2.5
+	3.13.3
 
 ライブラリー
 	•	pandas:2.2.3
@@ -33,7 +33,7 @@ invoice-generator/
 
 python src/generate_invoice.py \
   --client_name "XXX" \
-  --delivery_date_cell " "
+  --delivery_date_cell "E1"
 
   	•	--client_name：ファイル名・宛名・売上一覧の一致文字列
 	•	--delivery_date_cell：納品日のセル位置（例：E1）
